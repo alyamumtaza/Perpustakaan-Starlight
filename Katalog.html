@@ -1,23 +1,23 @@
-<body> 
+<body>
   <!-- Header / Navbar -->
   <header>
     <div class="logo">  <img src="image/logo perpustakaan.png"> Starlight <span>e-Library</span></div> <!--dipakai untuk mengatur teks "SAGA" dan "e-Library"-->
    
     <nav>
       <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#" class="active">Katalog</a></li>
-        <li><a href="#">Layanan</a></li>
-        <li><a href="#">Informasi</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">My Account</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Katalog.html" class="active">Katalog</a></li>
+        <li><a href="Layanan.html">Layanan</a></li>
+        <li><a href="Informasi.html">Informasi</a></li>
+        <li><a href="Profil.html">Profil</a></li>
+        <li><a href="My Account.html">My Account</a></li>
 
       </ul>
     </nav>
     <div class="account">
       <button class="login-btn" onclick="bukaPopup()">Login</button>
       <input type="text" placeholder="Search...">
-    </div>
+    </div>
 
 <div id="popupLogin" class="popup">
     
@@ -31,8 +31,6 @@
     </form>
     <p>Belum punya akun? <a href="#">Daftar</a></p>
   </div>
-    </div>
-
 
   <script>
     function bukaPopup() {
@@ -55,50 +53,19 @@
 
   </header>
   <!-- BANNER -->
-  <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="desktop">
-      <div class="header"></div>
-      <div class="text-wrapper">Beranda</div>
-      <div class="footer"></div>
-      <div class="div">Katalog</div>
-      <div class="text-wrapper-2">Layanan</div>
-      <div class="text-wrapper-3">Profil</div>
-      <div class="text-wrapper-4">Informasi</div>
-      <div class="text-wrapper-5">My Account</div>
-      <img class="search" src="img/image.png" />
-      <img class="akreditasi" src="image/akreditasi.png" />
-      <div class="text-wrapper-6">Starlight Library</div>
-      <img class="img" src="image/search.png" />
-      <img class="logo" src="image/logo perpustakaan.png" />
-      <div class="text-wrapper-7">Katalog</div>
-      <div class="text-wrapper-8">Online</div>
-      <img class="element" src="image/katalog loneliness.jpeg" />
-      <img class="element-buku-bacaan-yang" src="image/katalog moon.jpeg" />
-      <img class="the-great-bayt-al" src="image/katalog rainfall.jpg" />
-      <img class="element-cd" src="image/katalog rasa.jpeg" />
-      <img class="ffef-cb-a" src="image/katalog bintang.jpeg" />
-      <img class="ffef-cb-a-2" src="image/katalog ternyata menjadi dewasa.jpeg" />
-      <img class="element-ee-f" src="image/katalog The Great Bayt Al-Hikmah.jpeg" />
-      <img class="element-2" src="image/katalog.jpeg" />
-      <img class="element-bbae" src="image/katalog wake up.jpeg" />
-      <img class="back-button" src="image/back-button.png" />
-      <img class="back-button-2" src="image/back-button.png" />
-      <p class="jl-raya-bintang-no">
-        Jl. Raya Bintang No. 24, Salatiga&nbsp;&nbsp; Email: starlightlibrary@gmail.com<br />@copyright
-        2025&nbsp;&nbsp;Perpustakaan Starlight
+  
+  <section class="banner">
+    <img src="image/banner.jpeg" alt="Perpustakaan">
+    <div class="banner-text">
+      <h1>Perpustakaan<br>Starlight</h1>
+      <p>
+        Selamat datang di ruang di mana kata-kata jadi cahaya dan setiap halaman membuka 
+        pintu menuju dunia baru.
+        Tempat di mana kata-kata bersinar, ide-ide bertemu, dan menemukan semesta 
+        baru lewat setiap halaman.
+        Yuk, jelajahi koleksi-koleksi dan biarkan bintang-bintang literasi jadi penerang perjalananmu.
       </p>
     </div>
-  </body>
-</html>
-
     </section>
   <!DOCTYPE html>
 <html lang="id">
@@ -108,6 +75,50 @@
   <title>Starlight e-Library</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<section class="katalog-online">
+
+  <!-- Area Pencarian -->
+  <div class="search-area">
+    <input type="text" placeholder="Cari buku di sini..." id="searchBook">
+    <button class="search-btn">Cari</button>
+  </div>
+
+  <!-- Slider Katalog -->
+  <div class="katalog-slider">
+
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+    <div class="slider-wrapper">
+      <div class="slide active">
+        <img src="image/katalog rasa.jpeg" alt="Buku 1">
+      </div>
+      <div class="slide">
+        <img src="image/katalog bintang.jpeg" alt="Buku 2">
+      </div>
+      <div class="slide">
+        <img src="image/katalog wake up.jpeg" alt="Buku 3">
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+  </div>
+
+</section>
+
+
+<section class="content">
+  <div class="news-updates">
+    <h2>📰 News & Updates</h2>
+    <div id="news-list"></div>
+  </div>
+
+  <div class="announcements">
+    <h2>📢 Pengumuman</h2>
+    <div id="announcement-list"></div>
+  </div>
+</section>
 
 <script src="script.js"></script>
 
@@ -120,4 +131,3 @@
 <html>
 
 </html>
- 
